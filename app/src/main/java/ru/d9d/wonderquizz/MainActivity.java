@@ -9,6 +9,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View view) {
         int correct = 0;
         EditText answer_star = (EditText) findViewById(R.id.answer_star);
-        if (answer_star.getText().toString().equalsIgnoreCase("Sun")) correct++;
+        if (answer_star.getText().toString().equalsIgnoreCase(getString(R.string.sun))) correct++;
         EditText answer_dense = (EditText) findViewById(R.id.answer_dense);
-        if (answer_dense.getText().toString().equalsIgnoreCase("Earth")) correct++;
+        if (answer_dense.getText().toString().equalsIgnoreCase(getString(R.string.earth))) correct++;
 
         RadioButton radio_answer_mercury = (RadioButton) findViewById(R.id.radio_answer_mercury);
         if (radio_answer_mercury.isChecked()) correct++;
@@ -48,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
                 answer_rings_uranus.isChecked() &&
                 answer_rings_neptune.isChecked()) correct++;
 
-        displayToast("You got total " + correct + " of 8 quiz questions right!");
+        displayToast(getString(R.string.quiz_result, Integer.toString(correct)));
     }
 
     public void displayToast(String message) {
-        Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
         toast.show();
     }
 }
