@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">Solar System Quiz</string>
-    <string name="welcome">This quiz is about interesting facts of Solar System.\nLet\'s begin.</string>
+    <string name="welcome">This quiz is about interesting facts about Solar System.\nLet\'s begin.</string>
+    <string name="result">Result</string>
+    <string name="one_word">(one word)</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="moon">Moon</string>

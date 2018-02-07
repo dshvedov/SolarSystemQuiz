@@ -27,7 +27,7 @@
         <EditText
             android:id="@+id/answer_star"
             style="@style/FormLineEdit"
-            android:hint="(one word)" />
+            android:hint="@string/one_word" />
 
         <View style="@style/FormDelimiter" />
 
@@ -82,22 +82,22 @@
 
         <CheckBox
             android:id="@+id/answer_rings_jupiter"
-            style="@style/FormCheckbox"
+            style="@style/FormLine"
             android:text="@string/jupiter" />
 
         <CheckBox
             android:id="@+id/answer_rings_saturn"
-            style="@style/FormCheckbox"
+            style="@style/FormLine"
             android:text="@string/saturn" />
 
         <CheckBox
             android:id="@+id/answer_rings_uranus"
-            style="@style/FormCheckbox"
+            style="@style/FormLine"
             android:text="@string/uranus" />
 
         <CheckBox
             android:id="@+id/answer_rings_neptune"
-            style="@style/FormCheckbox"
+            style="@style/FormLine"
             android:text="@string/neptune" />
 
         <View style="@style/FormDelimiter" />
@@ -163,14 +163,14 @@
         <EditText
             android:id="@+id/answer_dense"
             style="@style/FormLineEdit"
-            android:hint="(one word)" />
+            android:hint="@string/one_word" />
 
         <View style="@style/FormDelimiter" />
 
         <Button
             style="@style/FormButton"
             android:onClick="submit"
-            android:text="Result" />
+            android:text="@string/result" />
 
     </LinearLayout>
 </ScrollView>
