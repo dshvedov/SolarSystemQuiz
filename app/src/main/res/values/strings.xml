@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">Solar System Quiz</string>
+    <string name="welcome">This quiz is about interesting facts of Solar System.\nLet\'s begin.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="moon">Moon</string>
+    <string name="mercury">Mercury</string>
+    <string name="mars">Mars</string>
+    <string name="neptune">Neptune</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="saturn">Saturn</string>
+    <string name="uranus">Uranus</string>
+    <string name="question_star">What is the name of closest star to Earth?</string>
+    <string name="question_what">What\'s this?</string>
+    <string name="question_venus">Is that true what on Venus day lasts longer than Venus year?</string>
+    <string name="question_rings">Which of these planets are with rings?</string>
+    <string name="question_hot">Mercury is the hottest planet in our Solar system (on the surface)?</string>
+    <string name="question_jupiter">Jupiter is twice as massive as all the other planets combined</string>
+    <string name="question_ancients">Was Neptune known to the ancients as planet (before year 1700)?</string>
+    <string name="question_dense">The densest planet in iur Solar System is?</string>
+
+</resources>
+

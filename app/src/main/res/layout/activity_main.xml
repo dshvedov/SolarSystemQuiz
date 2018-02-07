@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin"
+    android:layout_marginTop="@dimen/margin"
+    tools:context="ru.d9d.wonderquizz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/welcome" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_star" />
+
+        <EditText
+            android:id="@+id/answer_star"
+            style="@style/FormLineEdit"
+            android:hint="(one word)" />
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_what" />
+
+        <ImageView
+            style="@style/FormImage"
+            android:layout_height="200dp"
+            android:src="@drawable/moonmercurymars" />
+
+        <RadioGroup style="@style/FormLine">
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/mars" />
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/moon" />
+
+            <RadioButton
+                android:id="@+id/radio_answer_mercury"
+                style="@style/FormRadio"
+                android:text="@string/mercury" />
+        </RadioGroup>
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_venus" />
+
+        <RadioGroup style="@style/FormLine">
+
+            <RadioButton
+                android:id="@+id/radio_answer_venus"
+                style="@style/FormRadio"
+                android:text="@string/yes" />
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_rings" />
+
+        <CheckBox
+            android:id="@+id/answer_rings_jupiter"
+            style="@style/FormCheckbox"
+            android:text="@string/jupiter" />
+
+        <CheckBox
+            android:id="@+id/answer_rings_saturn"
+            style="@style/FormCheckbox"
+            android:text="@string/saturn" />
+
+        <CheckBox
+            android:id="@+id/answer_rings_uranus"
+            style="@style/FormCheckbox"
+            android:text="@string/uranus" />
+
+        <CheckBox
+            android:id="@+id/answer_rings_neptune"
+            style="@style/FormCheckbox"
+            android:text="@string/neptune" />
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_hot" />
+
+        <RadioGroup style="@style/FormLine">
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_answer_hot"
+                style="@style/FormRadio"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_jupiter" />
+
+        <RadioGroup style="@style/FormLine">
+
+            <RadioButton
+                android:id="@+id/radio_answer_jupiter"
+                style="@style/FormRadio"
+                android:text="@string/yes" />
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_ancients" />
+
+        <RadioGroup style="@style/FormLine">
+
+            <RadioButton
+                style="@style/FormRadio"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_answer_ancients"
+                style="@style/FormRadio"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <View style="@style/FormDelimiter" />
+
+        <TextView
+            style="@style/FormLineHeader"
+            android:text="@string/question_dense" />
+
+        <EditText
+            android:id="@+id/answer_dense"
+            style="@style/FormLineEdit"
+            android:hint="(one word)" />
+
+        <View style="@style/FormDelimiter" />
+
+        <Button
+            style="@style/FormButton"
+            android:onClick="submit"
+            android:text="Result" />
+
+    </LinearLayout>
+</ScrollView>

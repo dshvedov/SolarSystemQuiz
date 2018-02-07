@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Form">
+        <item name="android:background">@color/colorBack</item>
+    </style>
+
+    <style name="FormDelimiter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorText</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+    </style>
+
+    <style name="FormLine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/spacing</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="FormImage" parent="FormLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="FormButton" parent="FormLine">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FormLineEdit" parent="FormLine">
+
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="FormRadio" parent="FormLine">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FormCheckbox" parent="FormLine"></style>
+
+    <style name="FormLineHeader" parent="FormLine">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+</resources>
