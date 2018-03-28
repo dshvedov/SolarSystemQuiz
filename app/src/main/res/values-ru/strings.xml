@@ -23,7 +23,7 @@
     <string name="question_jupiter">Юпитер в два раза больше, чем все остальные планеты системы вместе взятые</string>
     <string name="question_ancients">Был ли Нептун в древности известен как планета (до 1700 года)?</string>
     <string name="question_dense">Самая плотная планета в нашей Солнечной системе?</string>
-    <string name="quiz_result">Вы правильно угадали <xliff:g id="correct" example="4">%s</xliff:g> из 8 вопросов викторины!</string>
+    <string name="quiz_result">Вы правильно угадали <xliff:g example="4" id="correct">%s</xliff:g> из 8 вопросов викторины!</string>
 
 </resources>
 

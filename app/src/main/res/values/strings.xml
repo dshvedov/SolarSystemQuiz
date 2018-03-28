@@ -23,7 +23,7 @@
     <string name="question_jupiter">Jupiter is twice as massive as all the other system planets combined</string>
     <string name="question_ancients">Was Neptune known to the ancients as planet (before year 1700)?</string>
     <string name="question_dense">The densest planet in our Solar System is?</string>
-    <string name="quiz_result">You got total <xliff:g id="correct" example="4">%s</xliff:g> of 8 quiz questions right!</string>
+    <string name="quiz_result">You got total <xliff:g example="4" id="correct">%s</xliff:g> of 8 quiz questions right!</string>
 
 </resources>
 
