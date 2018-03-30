@@ -20,10 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void submit(View view) {
         int correct = 0;
-        EditText answer_star = findViewById(R.id.answer_star);
-        if (answer_star.getText().toString().equalsIgnoreCase(getString(R.string.sun))) correct++;
-        EditText answer_dense = findViewById(R.id.answer_dense);
-        if (answer_dense.getText().toString().equalsIgnoreCase(getString(R.string.earth)))
+
+        EditText answer_star = findViewById(R.id.et_answer_star);
+        if (answer_star.getText().toString().trim().equalsIgnoreCase(getString(R.string.sun)))
+            correct++;
+
+        EditText answer_dense = findViewById(R.id.et_answer_dense);
+        if (answer_dense.getText().toString().trim().equalsIgnoreCase(getString(R.string.earth)))
             correct++;
 
         RadioButton radio_answer_mercury = findViewById(R.id.radio_answer_mercury);
@@ -41,16 +44,20 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radio_answer_ancients = findViewById(R.id.radio_answer_ancients);
         if (radio_answer_ancients.isChecked()) correct++;
 
-        CheckBox answer_rings_jupiter = findViewById(R.id.answer_rings_jupiter);
-        CheckBox answer_rings_saturn = findViewById(R.id.answer_rings_saturn);
-        CheckBox answer_rings_uranus = findViewById(R.id.answer_rings_uranus);
-        CheckBox answer_rings_neptune = findViewById(R.id.answer_rings_neptune);
+        CheckBox answer_rings_jupiter = findViewById(R.id.cb_answer_rings_jupiter);
+        CheckBox answer_rings_saturn = findViewById(R.id.cb_answer_rings_saturn);
+        CheckBox answer_rings_uranus = findViewById(R.id.cb_answer_rings_uranus);
+        CheckBox answer_rings_neptune = findViewById(R.id.cb_answer_rings_neptune);
         if (answer_rings_jupiter.isChecked() &&
                 answer_rings_saturn.isChecked() &&
                 answer_rings_uranus.isChecked() &&
                 answer_rings_neptune.isChecked()) correct++;
 
-        displayToast(getString(R.string.quiz_result, Integer.toString(correct)));
+        if (correct == 8){
+            displayToast(getString(R.string.quiz_result_perfect));
+        }else{
+            displayToast(getString(R.string.quiz_result, Integer.toString(correct)));
+        }
     }
 
     public void displayToast(String message) {

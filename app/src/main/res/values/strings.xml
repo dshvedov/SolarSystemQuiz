@@ -15,6 +15,7 @@
     <string name="uranus">Uranus</string>
     <string name="sun">Sun</string>
     <string name="earth">Earth</string>
+    <string name="planet_surface_image">Planet surface image</string>
     <string name="question_star">What is the name of closest star to Earth?</string>
     <string name="question_what">What\'s this?</string>
     <string name="question_venus">Is that true what on Venus day lasts longer than Venus year?</string>
@@ -24,6 +25,7 @@
     <string name="question_ancients">Was Neptune known to the ancients as planet (before year 1700)?</string>
     <string name="question_dense">The densest planet in our Solar System is?</string>
     <string name="quiz_result">You got total <xliff:g example="4" id="correct">%s</xliff:g> of 8 quiz questions right!</string>
+    <string name="quiz_result_perfect">Perfect score! You got all quiz questions right!</string>
 
 </resources>
 

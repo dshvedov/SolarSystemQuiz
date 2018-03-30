@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Form"
     android:layout_width="match_parent"
@@ -27,7 +26,7 @@
             android:text="@string/question_star" />
 
         <EditText
-            android:id="@+id/answer_star"
+            android:id="@+id/et_answer_star"
             style="@style/FormLineEdit"
             android:hint="@string/one_word" />
 
@@ -40,7 +39,8 @@
         <ImageView
             style="@style/FormImage"
             android:layout_height="200dp"
-            android:src="@drawable/moonmercurymars" />
+            android:src="@drawable/moonmercurymars"
+            android:contentDescription="@string/planet_surface_image" />
 
         <RadioGroup style="@style/FormLine">
 
@@ -83,22 +83,22 @@
             android:text="@string/question_rings" />
 
         <CheckBox
-            android:id="@+id/answer_rings_jupiter"
+            android:id="@+id/cb_answer_rings_jupiter"
             style="@style/FormLine"
             android:text="@string/jupiter" />
 
         <CheckBox
-            android:id="@+id/answer_rings_saturn"
+            android:id="@+id/cb_answer_rings_saturn"
             style="@style/FormLine"
             android:text="@string/saturn" />
 
         <CheckBox
-            android:id="@+id/answer_rings_uranus"
+            android:id="@+id/cb_answer_rings_uranus"
             style="@style/FormLine"
             android:text="@string/uranus" />
 
         <CheckBox
-            android:id="@+id/answer_rings_neptune"
+            android:id="@+id/cb_answer_rings_neptune"
             style="@style/FormLine"
             android:text="@string/neptune" />
 
@@ -163,7 +163,7 @@
             android:text="@string/question_dense" />
 
         <EditText
-            android:id="@+id/answer_dense"
+            android:id="@+id/et_answer_dense"
             style="@style/FormLineEdit"
             android:hint="@string/one_word" />
 
